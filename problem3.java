@@ -2,7 +2,7 @@ package projectEuler;
 
 import java.util.ArrayList;
 
-public class problem3 {
+public class Problem3 {
 	
 	static ArrayList<Long> a = new ArrayList<Long>();
 
