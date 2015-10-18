@@ -2,7 +2,7 @@ package projectEuler;
 import java.util.ArrayList;
 
 
-public class problem7 {
+public class Problem7 {
 
 	
 

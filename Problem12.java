@@ -1,6 +1,8 @@
+
 package projectEuler;
 
 public class Problem12 {
+	
 	public static void main(String[] args) {
 		long num,i,j,count;
 		num=0;
@@ -20,7 +22,6 @@ public class Problem12 {
 	} 
 		long estimatedTime = System.nanoTime() - startTime;
         System.out.println(estimatedTime/1000);
-        System.out.println("done");
 	}	
 }
 //57177120
