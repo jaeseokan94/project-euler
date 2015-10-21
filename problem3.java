@@ -5,7 +5,6 @@
 
 package projectEuler;
 
-import java.util.ArrayList;
 
 public class Problem3 {
 	
@@ -25,31 +24,23 @@ public class Problem3 {
 	            if ( k % i == 0 )
 	                return false;
 	        }
-
 	        return true;
 	    }
 	public static void main(String[] args) {
 		
 		Problem3 p = new Problem3();
-
-	 
-	    long num = 2;
-	    while (1==1)
+ 
+	    long num = 3;
+	    while (true)
 	    {
 	        long prime = k / num;
-	        // 
-	        if ( k % prime == 0 &&  p.isPrime(prime) )
-	        {
+	       // Since num start from low number, it will find the biggest prime number first. 
+	        if ( k % prime == 0 &&  p.isPrime(prime))  
+	        { 
 	            System.out.println(prime);
 	            break;
 	        }
 	        num++;
 	    }		
-		
-		
-		
-		
-
 	}
-
 }
