@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class Problem8 {
 	
-	private String number = 
+	private static String NUMBER = 
 "73167176531330624919225119674426574742355349194934"+
 "96983520312774506326239578318016984801869478851843"+
 "85861560789112949495459501737958331952853208805511"+
@@ -37,23 +37,24 @@ public class Problem8 {
 "05886116467109405077541002256983155200055935729725"+
 "71636269561882670428252483600823257530420752963450";
 	
-	private ArrayList strToNums(String str){
 		
-		ArrayList result = new ArrayList();
-		String[] numstrings = str.split("");
-		for(int i=1; i< numstrings.length; i++){
-			result.add(new Integer(numstrings[i]));
+		
+private static int ADJACENT = 13;
+
+	public static void main (String[] args) {
+		
+		long maxProd = -1;
+		for (int i = 0; i + ADJACENT <= NUMBER.length(); i++) {
+			long prod = 1;
+			for (int j = 0; j < ADJACENT; j++)
+				prod *= NUMBER.charAt(i + j) - '0';
+			maxProd = Math.max(prod, maxProd);
 		}
-		return result;
-	
+		System.out.println(maxProd);
+
 	}
 	
-
-	public static void main (String[] args) 
-	{ 
-		System.out.println(result);
-		
-		
-			}
+	
+	
 }
 	
