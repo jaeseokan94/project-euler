@@ -42,6 +42,3 @@ public class Problem12 {
         System.out.println(estimatedTime/1000);
 	}	
 }
-//57177120
-//171531360
-//2344261920
