@@ -45,7 +45,6 @@ public class Problem14 {
 		
 		for(int i=1;i<50;i++){
 			
-		int prev;
 	
 			
 		a.add(collazt(i));
