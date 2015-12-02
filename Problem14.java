@@ -43,15 +43,15 @@ public class Problem14 {
 	
 	static Long counters(){
 		
-		for(int i=1;i<50;i++){
+		for(int i=1;i<1000000;i++){
 			
 	
 			
 		a.add(collazt(i));
 		}
 		
-		// return Collections.max(a);
-		return a.get(12);
+		return Collections.max(a);
+		//return a.get(13-1);
 	  
 	}
 	
