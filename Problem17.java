@@ -16,21 +16,49 @@ public class Problem17 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int oneTonine = 3+3+5+4+3+5+5+4;
-		int tenTonineteen = 3+6+5+8+8+7+7+9+8+8;
+		int oneTonine = 3+3+5+4+4+3+5+5+4;
+		int tenTonineteen = 3+6+6+8+8+7+7+9+8+8;
 		int twentyTonintynine = (6+6+5+5+5+7+6+6)*(oneTonine+1);
+		
+		int twenty = 6*(oneTonine+1) ;
+		
+		
+		
 		
 		int set = oneTonine+tenTonineteen+twentyTonintynine; //1-99
 		
 		int hundredand = 10;
 		
-		int hundredTo999 =  (oneTonine)*(hundredand)*(set)+(oneTonine+(7*9));
+		int hundred = 7;
+		int and = 3; 
+		
+		int counth = (hundred+and)*900-(9*and); //count whole repeated hundred + and between 100 - 999
+		
+		int countt = set * 10 ; 
+		
+		
+		//int hundred = set+(hundredand*99)-3;
+		int twoh =set+(((hundredand)+3)*99)-3;
+		int threeh = set+(((hundredand)+5)*99)-3;
+		int fourh = set+(((hundredand)+4)*99)-3;
+		int fiveh =  set+(((hundredand)+4)*99)-3;
+		int sixh =  set+(((hundredand)+3)*99)-3;
+		int sevenh =  set+(((hundredand)+5)*99)-3;
+		int eighth =  set+(((hundredand)+5)*99)-3;
+		int nineh =  set+(((hundredand)+4)*99)-3;
+
+		
+		
+		
+		int hundredTo999 =  (oneTonine+(hundredand*9))*(set)+(oneTonine+(7*9));
 		int onethousand = 11; 
 		
-		int ans = set+hundredTo999+onethousand;
-		
+		//int ans = set+hundred+twoh+threeh+fourh+fiveh+sixh+eighth+nineh+onethousand;
+		int ans = counth + countt;
 		
 		System.out.println(ans);
+		System.out.println(set);
+
 
 	}
 
