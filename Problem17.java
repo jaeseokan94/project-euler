@@ -10,20 +10,24 @@ NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-
  */
 
 
+// point to improve : use .length 
+
 
 public class Problem17 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int oneTonine = 3+3+5+4+4+3+5+5+4;
-		int tenTonineteen = 3+6+6+8+8+7+7+9+8+8;
-		int twentyTonintynine = (6+6+5+5+5+7+6+6)*(oneTonine+1);
+		int oneTonine = 3+3+5+4+4+3+5+5+4; // onetwothreefourfivesixseveneightnine.length = 36 
+		int tenTonineteen = 3+6+6+8+8+7+7+9+8+8; // teneleventwelvethirteenfourteenfifteensixteenseventeeneighteennineteen  = 70
+		int twentyTonintynine = (6+6+5+5+5+7+6+6)*(10)+oneTonine*8; //twentythirtyfortyfiftysixtyseventyeightyninety
+		
 		
 		int twenty = 6*(oneTonine+1) ;
 		
 		
-		
+	//	System.out.println(twentyTonintynine); debugging 
+
 		
 		int set = oneTonine+tenTonineteen+twentyTonintynine; //1-99
 		
@@ -32,7 +36,7 @@ public class Problem17 {
 		int hundred = 7;
 		int and = 3; 
 		
-		int counth = (hundred+and)*900-(9*and); //count whole repeated hundred + and between 100 - 999
+		int counth = (hundred+and)*900-(9*and)+(oneTonine)*100; //count whole repeated hundred + and between 100 - 999 + prefix(one-nine)
 		
 		int countt = set * 10 ; 
 		
@@ -54,8 +58,10 @@ public class Problem17 {
 		int onethousand = 11; 
 		
 		//int ans = set+hundred+twoh+threeh+fourh+fiveh+sixh+eighth+nineh+onethousand;
-		int ans = counth + countt;
+		int ans = counth + countt+11;
 		
+		System.out.println(counth);
+
 		System.out.println(ans);
 		System.out.println(set);
 
